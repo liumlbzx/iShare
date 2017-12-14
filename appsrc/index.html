@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-ch" style="font-size: 0;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit|ie-stand">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="email=no" name="format-detection">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>加载中</title>
+  <script>
+    //取消浏览器的所有事件，使得active的样式在手机上正常生效
+    document.addEventListener('touchstart',function(){
+      return false;
+    },true);
+    document.oncontextmenu= function(){
+      return false;
+    };
+
+    (function(){
+      var reFont = function(){
+        var width = Math.max(document.documentElement.clientWidth, 320);
+        var maxWidth = 1080;
+        document.querySelector('html').style.fontSize = Math.min(width,maxWidth) + 'px';
+      };
+      reFont();
+      window.onresize = function(){
+        reFont();
+      };
+    })();
+  </script>
+</head>
+<body>
+<section id="app">
+  <p style="font-size: 14px;padding-top: 20px;text-align: center;color: #666;">加载中，请稍等下</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,11 @@
+2017/07/29 22:58:52 [error] [php] Undefined variable: ret (/private/var/www/taoliujun/iShare/server/protected/controllers/default/indexAction.php:10)
+Stack trace:
+#0 /private/var/www/taoliujun/iShare/server/framework/web/CController.php(286): defaultController->runAction()
+#1 /private/var/www/taoliujun/iShare/server/framework/web/CController.php(265): defaultController->runActionWithFilters()
+#2 /private/var/www/taoliujun/iShare/server/framework/web/CWebApplication.php(282): defaultController->run()
+#3 /private/var/www/taoliujun/iShare/server/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /private/var/www/taoliujun/iShare/server/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /private/var/www/taoliujun/iShare/server/index.php(22): CWebApplication->run()
+REQUEST_URI=/taoliujun/iShare/server/
+in /private/var/www/taoliujun/iShare/server/protected/controllers/default/indexAction.php (10)
+in /private/var/www/taoliujun/iShare/server/index.php (22)

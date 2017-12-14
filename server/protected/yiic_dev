@@ -1,0 +1,4 @@
+#!/usr/local/Cellar/php56/5.6.30_6/bin/php
+<?php
+defined('YII_DEBUG') or define('YII_DEBUG',true);
+require_once(__DIR__.'/yiic.php');

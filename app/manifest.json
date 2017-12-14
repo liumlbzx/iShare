@@ -1,0 +1,190 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H55E6E7FC",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "app",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0",/*应用版本名称*/
+		"code": ""
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+
+
+
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+
+
+
+		"Events": {
+			"description": "应用扩展事件"
+		},
+
+		"UI": {},
+
+		"NativeUI": {},
+		"Webview": {},
+		"Navigator":{},
+		"Runtime":{},"Gallery":{}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"popGesture": "none",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": []
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "", /*iPhone4程序图标，分辨率：114x114*/
+						"retina7": "", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+						"retina8": "", /*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"settings-retina8": ""
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": ""
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": ""
+				}
+			},"debug":false
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"static/mui/css/mui.min.css",
+					"static/js/app.9054b1847e7d817516c5.js",
+					"static/mui/js/mui.min.js",
+					"static/js/manifest.fb6c283a1b0d104c89ef.js",
+					"static/css/app.d5af9230339135ea69db936b8100d2e5.css",
+					"static/js/vendor.24389ad6253d12330d33.js",
+					"static/js/manifest.666d9e9eddbb0f552e10.js",
+					"static/js/app.463ca908b6fc13393518.js",
+					"static/js/manifest.b0ca2b591d62b2a9ac96.js",
+					"static/js/vendor.884bdfa3d5db8d9bbc20.js",
+					"static/js/app.288d8dce820a4d92ef8f.js",
+					"static/css/app.f0352153642ad1cc2a0d2449026c3035.css",
+					"static/js/app.7ee8973ecefaf826cb9c.js",
+					"static/js/manifest.287c6d10e0518589d392.js",
+					"static/js/manifest.2ae1cddc85102aeb8eb2.js",
+					"static/js/app.a7a1cb1004a8cbd13ed7.js",
+					"static/css/app.70caaa9b2a2654eaa399900fe9ea4217.css",
+					"static/js/manifest.91b48087d3bcf6b4f468.js",
+					"static/js/app.ad885fb2df57813fe192.js",
+					"static/js/manifest.caca5e859939102949e7.js",
+					"static/js/app.1ca282d7db51816eee54.js",
+					"static/js/app.b92e3a66585c94742fb5.js",
+					"static/js/manifest.81448d4312fd60a1f7be.js",
+					"static/css/app.547bf6dc236f91c7b531e7d9c588e9a5.css",
+					"static/js/app.f66cadc8b83f37527e2b.js",
+					"static/js/manifest.687373bb5ee234f5f6b7.js",
+					"static/img/app-intro-banner.8de11b5.jpg",
+					"static/js/vendor.b1f41cb0838c0b53d048.js",
+					"static/mui/js/mui.js"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": []
+		}
+	},
+	"unpackage": [
+		"**/*.map"
+	]
+}
